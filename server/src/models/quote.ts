@@ -7,7 +7,7 @@ export class quote {
     id: number
 
     @Column()
-    phrase: string
+    sentence: string
 
     @Column()
     description: string
