@@ -7,7 +7,7 @@ export default class PurposeController implements Crud {
     async create(request: Request, response: Response){
         const {purpose, description} = request.body;
        
-        const {values: purposeFound} = await Citi.findByID(Purpose,"1");  
+        const {value: purposeFound} = await Citi.findByID(Purpose,"1");  
         const isAnyUndefined = Citi.areValuesUndefined(purpose, description);
         if(isAnyUndefined || purposeFound) return response.status(400).send();
 
