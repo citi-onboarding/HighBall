@@ -24,15 +24,6 @@ export default class PurposeController implements Crud {
         return response.status(httpStatus).send(values);
     }
 
-    async delete(request: Request, response: Response){
-        const { id } = request.params;
-        const {value: purposeFound, message } = await Citi.findByID(Purpose, id); 
-           
-        if(!purposeFound) return response.status(400).send({ message });
-
-        const {httpStatus, messageFromDelete } = await Citi.deleteValue(Purpose, purposeFound);
-        return response.status(httpStatus).send({ messageFromDelete });
-    }
 
     async update(request: Request, response: Response){
         const { id } = request.params;
