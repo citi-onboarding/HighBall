@@ -16,7 +16,6 @@ routes.put('/user/:id', userController.update);
 
 routes.post('/purpose', purposeController.create);
 routes.get('/purpose', purposeController.get);
-routes.delete('/purpose/:id', purposeController.delete);
 routes.put('/purpose/:id', purposeController.update);
 
 export default routes;
