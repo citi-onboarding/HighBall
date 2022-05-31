@@ -4,7 +4,7 @@ import QuoteController from '@controllers/QuoteController'
 
 const routes = express.Router();
 const userController = new UserController();
-const QuoteController = new QuoteController();
+const quoteController = new QuoteController();
 
 routes.post('/user', userController.create);
 routes.get('/user', userController.get);
@@ -13,7 +13,6 @@ routes.put('/user/:id', userController.update);
 
 routes.post('/quote', QuoteController.create);
 routes.get('/quote', QuoteController.get);
-routes.delete('/user/:id', QuoteController.delete);
 routes.put('/user/:id', userController.update);
 
 
