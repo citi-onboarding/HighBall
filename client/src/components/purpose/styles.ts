@@ -53,7 +53,7 @@ export const Description = styled.p `
   font-size: 18px;
   line-height: 22px;
   color: #232323;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
 `
 
