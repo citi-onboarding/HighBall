@@ -1,4 +1,5 @@
 import React from 'react';
+import bubbles from '../../assets/bubbles.svg';
 import {
   Container,
   SideImages,
@@ -6,11 +7,9 @@ import {
   Title,
   Description,
   About,
-} from './styles'
-;
-import bubbles from '../../assets/bubbles.svg'
+} from './styles';
 
-//<img src={bubble} alt="ALTERAR" />
+
 export function Purpose(){
   return(
     <About>
