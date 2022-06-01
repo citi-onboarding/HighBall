@@ -1,21 +1,38 @@
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
+import background from './testings.png';
 
+export const About = styled.section`
+  background-image: url(${background});
+  background-position: center;
+  background-size:100% 613px;
+  background-repeat: no-repeat;
+ 
+  
+`
 
-export const Container = styled.section`
+export const Container = styled.div`
   display: flex;
   align-items: center;
   height: 613px;
   width: 1126px;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-end;
+
 `;
 
 export const SideImages = styled.aside`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 613px;
   border-radius: 5px;
+  width: 573px;
+  img{
+
+  }
 `;
 
 
