@@ -8,10 +8,14 @@ import {
 } from './styles';
 
 
+
 export function Purpose(){
   return(
     <Container>
-      <SideImages/>
+      <img src='../../assets/stock' alt="ALTERAR" />
+      <SideImages>
+        
+      </SideImages>
       <Content>
         <Title>
           Propósito
@@ -19,7 +23,7 @@ export function Purpose(){
         <Description>
         Criada em 2021 por duas amigas com o intuito de dinamizar a arte de consumir bebidas, implementando e promovendo um design sofisticado e personalizado a cada gole, através de copos desenhados por especialistas.<br/><br/>Possuimos um portfólio amplo e em crescente modificação e estamos sempre disponiveis para sentar com os nossos clientes e desenhar a melhor solucao que se adeque a sua realidade e necessidade.
         </Description>
-  
+
       </Content>
     </Container>
   );
