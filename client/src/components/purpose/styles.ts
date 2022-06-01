@@ -45,12 +45,16 @@ export const Title = styled.h2`
   font-size: 42px;
   color: #7B54C9;
   margin-bottom: 24px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 600;
 `;
 
 export const Description = styled.p `
   font-size: 18px;
   line-height: 22px;
   color: #232323;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
 `
 
 
