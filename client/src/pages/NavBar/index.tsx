@@ -8,7 +8,7 @@ export const NavBar =  () => {
         <Nav>
             <Logo src={highBall}/>
             <Options>
-                <Bold>Ínicio</Bold>
+                <Bold>Início</Bold>
                 <Light>Propósito</Light>
                 <Light>Catálogo</Light>
                 <Package>
