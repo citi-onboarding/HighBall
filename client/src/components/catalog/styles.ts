@@ -11,7 +11,7 @@ export const Contact = styled.section`
 `
 
 export const Carousel = styled(Slider)`
-  background-color: #FFFFFF;
+
   width: 50%;
   margin-left: auto;
   margin-right: auto;

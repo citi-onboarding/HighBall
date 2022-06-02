@@ -5,7 +5,7 @@ import { GlobalStyle } from './styles/global';
 
 
 import { Home } from './pages';
-import { Catalog } from './components/catalog/catalog'
+import { Catalog } from './components'
 
 function App() {
   return (
