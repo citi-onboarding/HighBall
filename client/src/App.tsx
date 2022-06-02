@@ -5,10 +5,12 @@ import { GlobalStyle } from './styles/global';
 
 
 import { Home } from './pages';
+import { Catalog } from './components/catalog/catalog'
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <Catalog/>
       <Home/>
       <GlobalStyle/>
     </ThemeProvider>
