@@ -5,7 +5,7 @@ import { GlobalStyle } from './styles/global';
 
 
 import { Home } from './pages/home';  
-import { Purpose } from './components/purpose/purpose'
+import { Purpose } from './components'
 
 function App() {
   return (
