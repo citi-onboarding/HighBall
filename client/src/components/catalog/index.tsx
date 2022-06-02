@@ -1,8 +1,10 @@
 import React from "react";
 import {
-  Contact,
+  Container,
   Carousel,
   Card,
+  Title,
+  InnerContainer
 } from './styles'
 import RightArrow from "../../assets/nextArrow.svg"
 import PrevArrow from "../../assets/prevArrow.svg"
@@ -29,34 +31,29 @@ export function Catalog(){
   };
   
   return(
-    <Contact>
-      <Carousel {...settings}>
+    <Container>
+      <InnerContainer>
+        <Title>
+          Catálogo
+        </Title>
+        <Carousel {...settings}>
+          <Card className="arroz">
+            arroz
+          </Card>
+          <Card className="macamarao">
+          macarrao com camarao
+        </Card>
         <Card className="arroz">
-          arroz
+            arroz
+          </Card>
+          <Card className="macamarao">
+          macarrao com camarao
         </Card>
-        <Card className="macamarao">
-        macarrao com camarao
-      </Card>
-      <Card className="arroz">
-          arroz
-        </Card>
-        <Card className="macamarao">
-        macarrao com camarao
-      </Card>
-      <Card className="arroz">
-          arroz
-        </Card>
-        <Card className="macamarao">
-        macarrao com camarao
-      </Card>
-      <Card className="arroz">
-          arroz
-        </Card>
-        <Card className="macamarao">
-        macarrao com camarao
-      </Card>      
-      </Carousel>
-
-    </Contact>
+        <Card className="arroz">
+            arroz
+          </Card>      
+        </Carousel>
+      </InnerContainer>
+    </Container>
   )
 }
