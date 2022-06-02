@@ -19,7 +19,7 @@ export function Catalog(){
   
   const settings = {
     centerMode:true,
-    centerPadding: "30px",
+    centerPadding: "-10px",
     dots: true,
     infinite: true,
     speed: 500,
