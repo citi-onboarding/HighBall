@@ -10,6 +10,39 @@ export const Container = styled.div`
   margin-bottom: 86px;
   margin-top: 150px;
   margin-left: 25px;
-  background: url(${CardBackground}) ;
+  background: url(${CardBackground});
+  background-size: 100% 100%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow:visible;
+  justify-content: flex-end;
+  img{
+    max-height: 160px;
+    float:right;
+    margin-bottom: 16px;
+  }
 
+  p{
+    margin-bottom: 30px !important;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  h3 {
+    margin-bottom: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+  }
+`
+export const Title = styled.div`
+  
 `

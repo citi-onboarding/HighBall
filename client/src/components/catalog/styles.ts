@@ -22,9 +22,10 @@ export const Carousel = styled(Slider)`
   margin-right: auto;
 
   .slick-center {
-    transition: width 0.5s, height 0.5s, transform 0.5s;
+    transition: width 0.85s, height 0.85s, transform 0.85s;
     transform: scale(1.336622561112357);
   }
+
   
   .slick-dots {
     button { /*Hides old button*/
@@ -39,7 +40,7 @@ export const Carousel = styled(Slider)`
       
     }
     .slick-active {
-      transition: width 0.5s, height 0.5s, transform 0.5s;
+      transition: width 0.85s, height 0.85s, transform 0.85s;
       width: 20.57px;
       height: 12px;
       background: #6DADE4;

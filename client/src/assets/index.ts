@@ -1,5 +1,5 @@
 import LogoCITi from './logo.png';
-import CardBackground from './card background.png';
+import CardBackground from './Group_2_8.png';
 
 
 export {
