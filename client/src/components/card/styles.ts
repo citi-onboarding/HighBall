@@ -19,7 +19,7 @@ export const Container = styled.div`
   justify-content: flex-end;
 `
 export const Product = styled.img`
-  max-height: 160px;
+  max-height: 170px;
   float:right;
   margin-bottom: 16px;
 `
@@ -29,8 +29,8 @@ export const Title = styled.h3`
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 16.24px;
+  line-height: 19.66px;
   text-align: center;  
   color: #232323;
 `
@@ -40,8 +40,8 @@ export const Description = styled.p `
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 11.81px;
+  line-height: 14.3px;
   text-align: center;
   color: #232323;
 

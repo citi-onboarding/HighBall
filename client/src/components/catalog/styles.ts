@@ -21,16 +21,20 @@ export const Carousel = styled(Slider)`
   margin-left: auto;
   margin-right: auto;
 
-  .slick-active{
+  .slick-slide{
     transition: width 0.85s, height 0.85s, transform 0.85s;
     transform: scale(1);
+    opacity: 0.4;
+    transition: opacity 0.85s ease-in;
   }
 
   .slick-center {
+    opacity: 1;
+    transition: opacity 0.85s ease-out;
+
     transition: width 0.85s, height 0.85s, transform 0.85s;
     transform: scale(1.336622561112357);
   }
-
   
   .slick-dots {
     button { /*Hides old button*/
