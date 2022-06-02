@@ -1,8 +1,8 @@
 import React from "react";
+import {Card} from "../../components"
 import {
   Container,
   Carousel,
-  Card,
   Title,
   InnerContainer
 } from './styles'
@@ -37,21 +37,11 @@ export function Catalog(){
           Catálogo
         </Title>
         <Carousel {...settings}>
-          <Card className="arroz">
-            arroz
-          </Card>
-          <Card className="macamarao">
-          macarrao com camarao
-        </Card>
-        <Card className="arroz">
-            arroz
-          </Card>
-          <Card className="macamarao">
-          macarrao com camarao
-        </Card>
-        <Card className="arroz">
-            arroz
-          </Card>      
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+          
         </Carousel>
       </InnerContainer>
     </Container>
