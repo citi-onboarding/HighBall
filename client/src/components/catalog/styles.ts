@@ -21,6 +21,11 @@ export const Carousel = styled(Slider)`
   margin-left: auto;
   margin-right: auto;
 
+  .slick-active{
+    transition: width 0.85s, height 0.85s, transform 0.85s;
+    transform: scale(1);
+  }
+
   .slick-center {
     transition: width 0.85s, height 0.85s, transform 0.85s;
     transform: scale(1.336622561112357);
@@ -33,6 +38,7 @@ export const Carousel = styled(Slider)`
     }
 
     li{
+      transition: width 0.85s, height 0.85s, transform 0.85s;
       width: 12px;
       height: 12px;
       border: 1px solid #6DADE4;
@@ -58,6 +64,4 @@ export const Title = styled.h2`
   line-height: 44px;
   letter-spacing: 0.025em;
   color: #232323;
-  margin-bottom:32px;
-
 `

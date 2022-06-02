@@ -17,32 +17,32 @@ export const Container = styled.div`
   flex-direction: column;
   overflow:visible;
   justify-content: flex-end;
-  img{
-    max-height: 160px;
-    float:right;
-    margin-bottom: 16px;
-  }
-
-  p{
-    margin-bottom: 30px !important;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-  }
-
-  h3 {
-    margin-bottom: 8px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-  }
 `
-export const Title = styled.div`
-  
+export const Product = styled.img`
+  max-height: 160px;
+  float:right;
+  margin-bottom: 16px;
+`
+
+export const Title = styled.h3`
+  margin-bottom: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;  
+  color: #232323;
+`
+
+export const Description = styled.p `
+  margin-bottom: 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #232323;
+
 `
