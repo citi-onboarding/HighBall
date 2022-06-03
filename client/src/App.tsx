@@ -11,7 +11,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Catalog/>
-      <Home/>
       <GlobalStyle/>
     </ThemeProvider>
   );

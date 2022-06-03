@@ -8,8 +8,9 @@ export const Container = styled.div`
   box-shadow: 0px 5.90604px 14.7651px hsla(0, 0%, 0%, 0.1);
   border-radius: 29.5302px;
   margin-bottom: 86px;
-  margin-top: 150px;
-  margin-left: 25px;
+  margin-top: 134px;
+  margin-left: auto;
+  margin-right: auto;
   background: url(${CardBackground});
   background-size: 100% 100%;
   display:flex;
@@ -19,8 +20,7 @@ export const Container = styled.div`
   justify-content: flex-end;
 `
 export const Product = styled.img`
-  max-height: 170px;
-  float:right;
+  max-height: 180px;
   margin-bottom: 16px;
 `
 
