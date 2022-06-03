@@ -21,25 +21,33 @@ export const InnerContainer = styled.div`
 `
 
 export const Carousel = styled(Slider)`
-  width: 802px;
+  width: 935px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 6px;
   background-color: white;
 
+
+
   .slick-slide{
+    visibility: visible;
     transition: width 0.85s, height 0.85s, transform 0.85s;
     transform: scale(1);
     opacity: 0.4;
     transition: opacity 0.85s ease-in;
   }
 
-  .slick-center {
+
+  .slick-slide.slick-center {
+    visibility: visible;
     opacity: 1;
     transition: opacity 0.85s ease-out;
 
     transition: width 0.85s, height 0.85s, transform 0.85s;
     transform: scale(1.336622561112357);
   }
+
+  
   
   .slick-dots {
     button { /*Hides old button*/
@@ -62,8 +70,18 @@ export const Carousel = styled(Slider)`
       border-radius: 80px;
     }
   }
-`
 
+  .slick-list{
+    width: 874px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  .slick-arrow{
+    height: 27.59px;
+    width: 15.63px;
+  }
+`
 
 export const Title = styled.h2`
   font-family: 'Baloo 2';

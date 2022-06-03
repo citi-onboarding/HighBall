@@ -25,8 +25,10 @@ export function Catalog(){
     slidesToShow: 3,
     slidesToScroll: 1,
     rows:1,
+    centerPadding: '0px',
     nextArrow: <SlickArrowNext/>,
     prevArrow: <SlickArrowPrev/>,
+
   };
   
   return(
@@ -36,11 +38,11 @@ export function Catalog(){
           Catálogo
         </Title>
         <Carousel {...settings}>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-          
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
         </Carousel>
       </InnerContainer>
     </Container>
