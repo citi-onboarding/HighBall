@@ -1,8 +1,10 @@
+import { NONAME } from 'dns';
 import styled from 'styled-components';
 
 
 export const Container = styled.div`
     width: 1126px;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +34,11 @@ export const Logo = styled.p`
     letter-spacing: 0.025em;
     color: #6DADE4;
 
+`;
+
+export const A = styled.a`
+
+    text-decoration: none;
 `;
 
 export const Options = styled.div`

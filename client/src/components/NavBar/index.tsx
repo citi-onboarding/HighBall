@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav , Options, Bold,Link,Button, Logo, Container } from "./style";
+import { Nav , Options, Bold,Link,Button, Logo, Container, A} from "./style";
 import {vector  } from "../../assets";
 
 export const NavBar =  () => {
@@ -8,9 +8,9 @@ export const NavBar =  () => {
             <Container>
                 <Logo>HighBall</Logo>
                 <Options>
-                    <a href="http://"><Bold>Início</Bold></a>
-                    <a href="http://"><Link>Propósito</Link></a>
-                    <a href="http://"><Link>Catálogo</Link></a>
+                    <A href="http://"><Bold>Início</Bold></A>
+                    <A href="http://"><Link>Propósito</Link></A>
+                    <A href="http://"><Link>Catálogo</Link></A>
                     <Button>
                         Encomenda
                         <img src={vector} alt="imagem de uma sacola de compras" />
