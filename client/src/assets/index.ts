@@ -1,8 +1,10 @@
-import LogoCITi from './logo.png';
-import CardBackground from './Group_2_8.png';
+import NextArrow from './nextArrow.svg';
+import PrevArrow from './prevArrow.svg';
+import CardBackground from './card background.png';
 
 
 export {
-    LogoCITi,
+    NextArrow,
+    PrevArrow,
     CardBackground
 };

@@ -6,12 +6,12 @@ import {
   Title,
   InnerContainer
 } from './styles'
-import RightArrow from "../../assets/nextArrow.svg"
-import PrevArrow from "../../assets/prevArrow.svg"
+import { NextArrow } from "../../assets";
+import { PrevArrow } from "../../assets";
 
 export function Catalog(){
   const SlickArrowNext = ({ currentSlide, slideCount, ...props }:any) => (
-    <img src={RightArrow} alt="Next arrow" {...props} />
+    <img src={NextArrow} alt="Next arrow" {...props} />
   );
   const SlickArrowPrev = ({ currentSlide, slideCount, ...props }:any) => (
     <img src={PrevArrow} alt="Previous arrow" {...props} />
