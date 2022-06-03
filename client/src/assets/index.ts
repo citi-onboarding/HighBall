@@ -1,5 +1,7 @@
-import LogoCITi from './logo.png';
+import PurpuseBlob from './purpuseBlob.png';
+import PurpuseBubbles from './purpuseBubbles.svg';
 
 export {
-    LogoCITi
+    PurpuseBlob,
+    PurpuseBubbles
 };

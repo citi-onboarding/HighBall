@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import { theme } from '../../styles/theme';
-import background from '../../assets/blob.png'
+import { PurpuseBlob } from '../../assets';
 
 export const About = styled.section`
-  background-image: url(${background});
+  background-image: url(${PurpuseBlob});
   background-position: center;
   background-size:100% 613px;
   background-repeat: no-repeat;

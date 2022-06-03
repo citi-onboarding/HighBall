@@ -1,5 +1,5 @@
 import React from 'react';
-import bubbles from '../../assets/bubbles.svg';
+import { PurpuseBubbles } from '../../assets';
 import {
   Container,
   SideImages,
@@ -15,7 +15,7 @@ export function Purpose(){
     <About>
       <Container>
         <SideImages>
-        <img src={bubbles} alt="" />
+        <img src={PurpuseBubbles} alt="Imagem de pessoas segurando copos" />
         </SideImages>
         <Content>
           <Title>
