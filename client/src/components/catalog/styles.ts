@@ -2,24 +2,29 @@ import styled from 'styled-components';
 import Slider from "react-slick";
 import '../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../node_modules/slick-carousel/slick/slick-theme.css'
+import { CatalogBackground } from '../../assets';
 
 
 export const Container = styled.section`
   background-position: center;
-  background-size:100% 613px;
-  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background: url(${CatalogBackground});
+  background-repeat: repeat-x;
+  background-position: center;
 `
 
 export const InnerContainer = styled.div`
   width: 1126px;
   margin-left: auto;
   margin-right: auto;
+  
 `
 
 export const Carousel = styled(Slider)`
   width: 802px;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 
   .slick-slide{
     transition: width 0.85s, height 0.85s, transform 0.85s;
