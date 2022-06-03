@@ -9,12 +9,20 @@ export const Nav = styled.header`
     width: 100%;
     height: 90px;
     background-color: #FFFFFF;
-    margin: 0;
+    position: fixed;
+
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.p`
     height: 44px;
     width: 177px;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: 0.025em;
+    color: #6DADE4;
 
 `;
 
@@ -24,13 +32,13 @@ export const Options = styled.div`
     flex-direction: row;
     gap:40px;
 `;
-export const Light = styled.p`
+export const Link = styled.p`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    color: #232323
+    color: #232323;
 `;
 
 export const Bold = styled.p`
@@ -43,7 +51,7 @@ export const Bold = styled.p`
 
 `;
 
-export const Package = styled.div`
+export const Button = styled.button`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,12 +59,15 @@ export const Package = styled.div`
     background-color: #6DADE4;
     border-radius: 32px;
     padding: 12px 24px;
-`;
-
-export const White = styled.p`
+    border:none;
     font-family: 'Inter';
     font-style: normal;
     font-size: 18px;
     line-height: 22px;
     color: #F9F9F9;
+
+    &:hover{
+        background-color: #F9F9F9;
+        color: #6DADE4
+    }
 `;
