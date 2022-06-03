@@ -1,9 +1,17 @@
 import styled from 'styled-components';
 
-export const Nav = styled.header`
+
+export const Container = styled.div`
+    width: 1126px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+`;
+
+
+export const Nav = styled.header`
+    padding-top: 22px;
     padding-left: 120px;
     padding-right: 120px;
     width: 100%;
