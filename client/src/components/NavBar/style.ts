@@ -13,6 +13,8 @@ export const Container = styled.div`
 
 
 export const Nav = styled.header`
+    display: flex;
+    justify-content: center;
     padding-top: 22px;
     padding-left: 120px;
     padding-right: 120px;
