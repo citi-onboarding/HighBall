@@ -13,6 +13,5 @@ export class quote {
     description: string
 
     @Column()
-    link: number
-
+    link: string
 }
