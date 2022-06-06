@@ -15,7 +15,7 @@ export const Home: React.FC = () => {
                 {' '}
                 and
                 {' '}
-                <strong>&hearts;</strong>
+                <strong>&#10085;</strong>
                 {' '}
                 by CITi
             </p>
