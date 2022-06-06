@@ -2,7 +2,7 @@ import React from "react";
 import { HomeContainer } from './styles';
 
 
-export const Home: React.FC = () => {
+export const Home = () => {
     return (
         <HomeContainer>
             <h1>ReactJS Boilerplate</h1>

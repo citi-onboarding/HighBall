@@ -4,14 +4,17 @@ import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
 
-import { Purpose } from './components'
+import { NavBar, Purpose } from './components';
+
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Purpose/>
-      <GlobalStyle/>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <NavBar/>
+        <Purpose/>
+        <GlobalStyle/>
+      </ThemeProvider>
+      
   );
 }
 

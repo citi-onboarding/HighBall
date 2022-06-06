@@ -43,6 +43,4 @@ export default class UserController implements Crud {
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(User, id, userWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
     }
-
-    
 }
