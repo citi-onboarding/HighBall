@@ -37,3 +37,5 @@ export const HomeContainer = styled.div`
     width: 25%;
   }
 `;
+
+export const Testando = styled.header

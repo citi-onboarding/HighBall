@@ -4,15 +4,18 @@ import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
 
-import { Home } from './pages';
-import { Catalog } from './components'
+import { NavBar, Purpose, Catalog } from './components';
+
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <Catalog/>
-      <GlobalStyle/>
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <NavBar/>
+        <Purpose/>
+        <Catalog/>
+        <GlobalStyle/>
+      </ThemeProvider>
+      
   );
 }
 
