@@ -2,13 +2,13 @@ import { Request, Response } from 'express';
 import { Purpose } from '@models/Purpose';
 import { Citi, Crud } from '../global'
 
-
 export default class PurposeController implements Crud {
 
     async create(request: Request, response: Response){
         const {purpose, description} = request.body;
+    
+        const {value: purposeFound} = await Citi.findByID(Purpose,"1");  
 
-        const {value:purposeFound} = await Citi.findByID(Purpose,"1");
         const isAnyUndefined = Citi.areValuesUndefined(purpose, description);
         if(isAnyUndefined || purposeFound) return response.status(400).send();
 
@@ -22,6 +22,7 @@ export default class PurposeController implements Crud {
         const {httpStatus, values} = await Citi.getAll(Purpose);
         return response.status(httpStatus).send(values);
     }
+
 
     async update(request: Request, response: Response){
         const { id } = request.params;
