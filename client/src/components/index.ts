@@ -1,5 +1,7 @@
+import { Purpose } from './purpose';
 import { NavBar } from "./NavBar";
 
-export{
+export {
+    Purpose,
     NavBar
-}
+};
