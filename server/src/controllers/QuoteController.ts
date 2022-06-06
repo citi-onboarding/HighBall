@@ -10,7 +10,7 @@ export default class QuoteController implements Crud {
         const isAnyUndefined = Citi.areValuesUndefined(sentence, description, link);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newQuote = { quote, description, link };
+        const newQuote = { sentence, description, link };
         const {httpStatus, message} = await Citi.insertIntoDatabase(quote, newQuote);
 
         return response.status(httpStatus).send({ message });
