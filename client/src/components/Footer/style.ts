@@ -1,6 +1,7 @@
 import styled from "styled-components";
+
 export const Container = styled.div`
-    width: 1126px;]
+    width: 1126px;
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -9,7 +10,7 @@ export const Container = styled.div`
 export const Rodape = styled.footer`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
     padding-left: 120px;
     padding-right: 120px;
