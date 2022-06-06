@@ -7,8 +7,9 @@ export default class QuoteController implements Crud {
     async create(request: Request, response: Response){
         const {sentence, description, link} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(sentence, description, link);
-        if(isAnyUndefined) return response.status(400).send();
+    const {value: quoteFound} = await Citi.findByID(Quote,"1");
+        const isAnyUndefined = Citi.areValuesUndefined(quote, description);
+        if(isAnyUndefined || quoteFound) return response.status(400).send();
 
         const newQuote = { sentence, description, link };
         const {httpStatus, message} = await Citi.insertIntoDatabase(quote, newQuote);
