@@ -13,7 +13,7 @@ export const Home = () => {
                 {' '}
                 and
                 {' '}
-                <strong>&hearts;</strong>
+                <strong>&#10085;</strong>
                 {' '}
                 by CITi
             </p>
