@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { quote } from '@models/quote';
+import { quote } from '@models/Quote';
 import { Citi, Crud } from '../global'
 
 export default class QuoteController implements Crud {
