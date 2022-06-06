@@ -4,7 +4,7 @@ import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
 
-import { NavBar, Purpose } from './components';
+import { NavBar, Purpose, Catalog } from './components';
 
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <NavBar/>
         <Purpose/>
+        <Catalog/>
         <GlobalStyle/>
       </ThemeProvider>
       
