@@ -6,11 +6,15 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 1126px;
+    max-width: 100%;
+    padding-bottom: 56px;
 `;
 export const Rodape = styled.footer`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     position: absolute;
     padding-left: 120px;
     padding-right: 120px;
@@ -58,7 +62,7 @@ export const RedesSociais = styled.div`
 export const LogoRedesSociais = styled.div`
     display: flex;
     justify-content: center;
-    align-items1: center;
+    align-items: center;
     flex-direction: row;
     padding-left: 14px;
     gap: 24px;
