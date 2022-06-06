@@ -3,22 +3,20 @@ import { HomeContainer } from './styles';
 import { LogoCITi } from '../../assets';
 
 
-export const Home: React.FC = () => {
+export const Home = () => {
     return (
-        <HomeContainer>
-            <img src={LogoCITi} alt="" />
-            <h1>ReactJS Boilerplate</h1>
-            <p>
-                Made with
-                {' '}
-                <strong>&lt; &#x0002F; &gt;</strong>
-                {' '}
-                and
-                {' '}
-                <strong>&hearts;</strong>
-                {' '}
-                by CITi
-            </p>
-        </HomeContainer>
+        <div className="nav-bar">
+            <p>HighBall</p>
+
+            <div className="nav">
+                <p className="beggin">Ínicio</p>
+                <p>Propósito</p>
+                <p>Catálogo</p>
+                <div className="encomenda">
+                    <p>Encomenda</p>
+                </div>
+            </div>
+            
+        </div>
     );
 }
