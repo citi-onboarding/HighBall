@@ -12,9 +12,9 @@ import { NextArrow } from "../../assets";
 import { PrevArrow } from "../../assets";
 
 type CardAPI = {
-  title: string,
+  name: string,
   description: string,
-  image: string,
+  link: string,
 }
 
 
@@ -29,7 +29,7 @@ export function Catalog(){
   const [infos, setInfos] = useState<CardAPI[]>();
 
   const getInfos = async () => {
-    const res = await axios.get('https://api.github.com/users')
+    const res = await axios.get('http://localhost:3001/cup')
     const { data } = res;
     setInfos(
       data
@@ -41,13 +41,6 @@ export function Catalog(){
     getInfos();
   }, [])
 
-  const numbers = [
-    {title: "dixa p la", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit." ,image:"arroz" },
-    {title: "dixa p la", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit." ,image:"arroz" },
-    {title: "dixa p la", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit." ,image:"arroz" },
-    {title: "dixa p la", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit." ,image:"arroz" }
-
-  ];
 
   const settings = {
     centerMode:true,
