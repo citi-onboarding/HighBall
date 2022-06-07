@@ -10,12 +10,12 @@ import {
   Product
 } from './styles'
 
-export function Card(){
+export function  Card({ login, description, image }: { login: string, description: string, image: string }) {
   return(
     <Container>
       <Product src={Placeholder} alt="" />
-      <Title>Copo de refri</Title>
-      <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </Description>
+      <Title> {login}  </Title>
+      <Description> {description} </Description>
     </Container>
   )
 }

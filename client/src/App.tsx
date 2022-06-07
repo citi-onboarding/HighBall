@@ -13,7 +13,6 @@ function App() {
         <NavBar/>
         <Purpose/>
         <Catalog/>
-        <Footer/>
         <GlobalStyle/>
       </ThemeProvider>
       
