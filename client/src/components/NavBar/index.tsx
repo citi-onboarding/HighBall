@@ -8,7 +8,7 @@ export const NavBar =  () => {
             <Container>
                 <Logo>HighBall</Logo>
                 <Options>
-                    <A href="http://"><Bold>Início</Bold></A>
+                    <A href="http://"><Link>Início</Link></A>
                     <A href="http://"><Link>Propósito</Link></A>
                     <A href="http://"><Link>Catálogo</Link></A>
                     <Button>
