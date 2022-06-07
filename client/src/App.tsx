@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
-import { NavBar, Purpose, Catalog, Footer, About } from './components';
+import { NavBar, Purpose, Catalog, Footer, About, Contact } from './components';
 
 
 function App() {
@@ -12,6 +12,8 @@ function App() {
       <ThemeProvider theme={theme}>
         
         <About/>
+        <Contact/>
+        <GlobalStyle/>
        
       </ThemeProvider>
       

@@ -4,6 +4,7 @@ import { Catalog } from './catalog';
 import { Purpose } from './purpose';
 import { NavBar } from "./NavBar";
 import { About } from "./about";
+import { Contact } from "./contact";
 
 export {
     Catalog,
@@ -12,5 +13,6 @@ export {
     NavBar,
     Footer,
     About,
+    Contact,
 };
 
