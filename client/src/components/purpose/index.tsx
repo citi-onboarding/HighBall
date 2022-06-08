@@ -12,28 +12,27 @@ import {
 } from './styles';
 
 type PurposeAPI = {
-  purpose: string,
+  purpose?: string,
   description: string,
 }
 
 
 export function Purpose(){
-  const [infos, setInfos] = useState<PurposeAPI[]>();
+  const [infos, setInfos] = useState<PurposeAPI >();
+  
 
   const getInfos = async () => {
     const res = await axios.get('http://localhost:3001/purpose')
     const { data } = res;
     setInfos(
-      data
+      data[0]
     )
-    console.log(infos)
+    
   }
 
   useEffect(() => {
     getInfos();
-  }, [])
-
-    console.log(infos)
+  })
 
   return(
     <About>
@@ -43,11 +42,13 @@ export function Purpose(){
         </SideImages>
         <Content>
           <Title>
-            {infos[0].purpose}
+
+          {infos?.purpose}   
         
           </Title>
-          <Description>
-            {infos[0].description}
+          <Description> 
+          
+          {infos?.description}   
       
           </Description>
         </Content>
