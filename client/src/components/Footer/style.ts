@@ -15,10 +15,10 @@ export const Rodape = styled.footer`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 60.09px;
+    margin:-1px;
     bottom: 0px;
     width: 100%;
     height: 195.09px;
@@ -94,5 +94,5 @@ export const TextoCreditos = styled.p`
 export const CitiLogo = styled.img`
     Width: 23.7px;
     Height: 11.67px;
-    margin-left: 5.299999999999997px;
+    margin-left: 4.299999999999997px;
 `;
