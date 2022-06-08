@@ -1,4 +1,6 @@
 import React from 'react';
+import axios from "axios";
+import { useState, useEffect } from "react";
 import { PurpuseBubbles } from '../../assets';
 import {
   Container,
@@ -9,8 +11,30 @@ import {
   About,
 } from './styles';
 
+type PurposeAPI = {
+  purpose: string,
+  description: string,
+}
+
 
 export function Purpose(){
+  const [infos, setInfos] = useState<PurposeAPI[]>();
+
+  const getInfos = async () => {
+    const res = await axios.get('http://localhost:3001/purpose')
+    const { data } = res;
+    setInfos(
+      data
+    )
+    console.log(infos)
+  }
+
+  useEffect(() => {
+    getInfos();
+  }, [])
+
+    console.log(infos)
+
   return(
     <About>
       <Container>
@@ -19,10 +43,12 @@ export function Purpose(){
         </SideImages>
         <Content>
           <Title>
-            Propósito
+            {infos[0].purpose}
+        
           </Title>
           <Description>
-          Criada em 2021 por duas amigas com o intuito de dinamizar a arte de consumir bebidas, implementando e promovendo um design sofisticado e personalizado a cada gole, através de copos desenhados por especialistas.<br/><br/>Possuimos um portfólio amplo e em crescente modificação e estamos sempre disponiveis para sentar com os nossos clientes e desenhar a melhor solucao que se adeque a sua realidade e necessidade.
+            {infos[0].description}
+      
           </Description>
         </Content>
       </Container>
