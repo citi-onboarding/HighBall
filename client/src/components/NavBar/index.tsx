@@ -11,7 +11,7 @@ export const NavBar =  () => {
                     <A href="http://"><Link>Início</Link></A>
                     <A href="http://"><Link>Propósito</Link></A>
                     <A href="http://"><Link>Catálogo</Link></A>
-                    <Button>
+                    <Button href="">
                         Encomenda
                         <img src={vector} alt="imagem de uma sacola de compras" />
                     </Button>

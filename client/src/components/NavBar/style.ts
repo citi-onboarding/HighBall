@@ -74,7 +74,7 @@ export const Bold = styled.p`
 
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
     display: flex;
     flex-direction: row;
     align-items: center;
