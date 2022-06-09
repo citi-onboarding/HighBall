@@ -6,6 +6,7 @@ import { GlobalStyle } from './styles/global';
 import { NavBar, Purpose, Catalog, Footer } from './components';
 
 
+
 function App() {
   return (
 
