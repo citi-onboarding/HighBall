@@ -3,6 +3,7 @@ import CupController from '@controllers/CupController'
 import UserController from '@controllers/UserController'
 import QuoteController from '@controllers/QuoteController'
 import ContactController from '@controllers/ContactController'
+import { SendMail } from '@controllers/MailController'
 
 
 import PurposeController from '@controllers/PurposeController'
@@ -17,6 +18,8 @@ const contactController = new ContactController();
 const cupController = new CupController();
 
 const purposeController = new PurposeController();
+
+
 
 
 routes.post('/user', userController.create);
@@ -41,6 +44,9 @@ routes.put('/cup/:id', cupController.update);
 routes.post('/purpose', purposeController.create);
 routes.get('/purpose', purposeController.get);
 routes.put('/purpose/:id', purposeController.update);
+
+
+routes.post('/email', SendMail);
 
 
 
