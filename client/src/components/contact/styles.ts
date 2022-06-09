@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { BackgroundContact } from '../../assets';
 
 
-export const Container = styled.div `
+export const Container = styled.form `
     display: flex;
     width: 100%;
     background-image: url(${BackgroundContact});
@@ -43,7 +43,7 @@ export const Text1 = styled.div `
     margin-top: 75px;
     margin-bottom: 16px;
 `
-export const Text2 = styled.div `
+export const Text2 = styled.input `
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,9 +59,12 @@ export const Text2 = styled.div `
     color: #232323;
     opacity: 0.7;
     margin-bottom: 16px;
+    border: none;
 `
 
-export const Text3 = styled.div `
+
+
+export const Text3 = styled.textarea `
     padding: 14px 24px 12px;
     gap: 10px;
     height: 86px;
@@ -74,6 +77,7 @@ export const Text3 = styled.div `
     line-height: 19px;
     color: #232323;
     opacity: 0.7;
+    border: none;
 `
 
 
