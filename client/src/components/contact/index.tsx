@@ -10,12 +10,11 @@ export const Contact =  () => {
                 <ImageCup> <img src={Cups} alt="Copos coloridos" /> </ImageCup>
                 <Texts>
                     <Text1> Realize sua encomenda! </Text1>
-                    <Text2> Nome </Text2>
-                    <Text2> Email </Text2>
-                    <Text3> Qual ideia de copo você teve hoje? </Text3>
-                    <Click><button> Encomendar </button></Click>
+                    <Text2> <input type="text" placeholder="Nome"/> </Text2>
+                    <Text2> <input type="text" placeholder="Email"/></Text2>
+                    <Text3> <input type="text" placeholder="Qual ideia de copo você teve hoje?"/></Text3>
+                    <Click> <button> Encomendar </button></Click>
                 </Texts>
-                
            </MiniContainer>
        </Container>        
     );
