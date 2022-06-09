@@ -14,7 +14,7 @@ export const Contact =  () => {
         try {
             e.preventDefault ();
     
-            await api.post ('sendEmail', {nameClient, emailClient, messageClient})
+            await api.post ('email', {nameClient, emailClient, messageClient})
             alert ("Mensagem enviada com sucesso")
         } catch (error) {
             alert ("Houve um erro. Tente novamente.")
