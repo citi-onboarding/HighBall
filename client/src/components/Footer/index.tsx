@@ -19,7 +19,7 @@ export const Footer =  () => {
     const [infos, setInfos] = useState<FooterAPI[]>();
 
     const getInfos = async () => {
-    const res = await axios.get('https://api.github.com/users')
+    const res = await axios.get('http://localhost:3001/contact')
     const { data } = res;
     setInfos(
         data
@@ -46,7 +46,6 @@ export const Footer =  () => {
                                 {...item}
                             />
                         ))}
-                        <Insta src={Instagram}></Insta>
                         
                         
                     </LogoRedesSociais>
