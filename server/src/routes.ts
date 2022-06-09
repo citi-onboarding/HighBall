@@ -6,6 +6,8 @@ import ContactController from '@controllers/ContactController'
 
 
 import PurposeController from '@controllers/PurposeController'
+import { SendMail } from '@controllers/MailController';
+
 
 const routes = express.Router();
 const userController = new UserController();
