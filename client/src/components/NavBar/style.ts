@@ -16,12 +16,14 @@ export const Nav = styled.header`
     display: flex;
     justify-content: center;
     padding-top: 22px;
+    top:0;
     padding-left: 120px;
     padding-right: 120px;
     width: 100%;
     height: 90px;
     background-color: #FFFFFF;
     position: fixed;
+    z-index: 5;
 
 `;
 
@@ -39,8 +41,9 @@ export const Logo = styled.p`
 `;
 
 export const A = styled.a`
-
     text-decoration: none;
+    
+    
 `;
 
 export const Options = styled.div`
@@ -56,6 +59,9 @@ export const Link = styled.p`
     font-size: 18px;
     line-height: 22px;
     color: #232323;
+    &:hover{
+        font-weight: 600;
+    }
 `;
 
 export const Bold = styled.p`
@@ -84,7 +90,6 @@ export const Button = styled.button`
     color: #F9F9F9;
 
     &:hover{
-        background-color: #F9F9F9;
-        color: #6DADE4
+        opacity: 0.5;
     }
 `;
