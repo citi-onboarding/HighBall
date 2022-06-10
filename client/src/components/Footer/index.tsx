@@ -1,8 +1,35 @@
 import React from "react";
+import axios from "axios";
+import { useState, useEffect } from "react";
 import { Facebook, grupo1, grupo17,Instagram, vector15, Youtube } from "../../assets";
 import { Rodape, Texto,Barra, Descricao, Imagem,RedesSociais, LogoRedesSociais, Insta, Face, Youtb, Creditos, TextoCreditos,CitiLogo, Container } from "./style"; 
+import Icon from '../Icon';
+import { Card } from "../card";
+
+type FooterAPI = {
+    icon: string,
+    name: string,
+    link: string
+}
+
+
+
 
 export const Footer =  () => {
+    const [infos, setInfos] = useState<FooterAPI[]>();
+
+    const getInfos = async () => {
+    const res = await axios.get('http://localhost:3001/contact')
+    const { data } = res;
+    setInfos(
+        data
+    )
+    console.log(infos)
+    }
+
+    useEffect(() => {
+    getInfos();
+    }, [])
     return(      
        <Rodape>
            <Container>
@@ -13,9 +40,14 @@ export const Footer =  () => {
                 </Texto>
                 <RedesSociais>
                     <LogoRedesSociais>
-                        <Insta src={Instagram}></Insta>
-                        <Face src={Facebook}></Face>
-                        <Youtb src={Youtube}></Youtb>
+                        {infos?.map((item:any, index:number) => (
+                            <Icon
+                                key={index}
+                                {...item}
+                            />
+                        ))}
+                        
+                        
                     </LogoRedesSociais>
                     <Creditos>
                         <TextoCreditos>Made with
