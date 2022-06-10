@@ -9,7 +9,7 @@ const SendMail = async (request: Request, response: Response) => {
         const{name, email, message} = request.body;
         await MailServer ({
             destinationUser: process.env.EMAIL_WILL_RECEIVE,
-            subjectText: 'A HighBall tem uma nova mensagem',
+            subjectText: 'A HighBall tem uma nova mensagemg',
             html0ption: `<p> 
 
                 Olá, você recebeu um novo pedido através do formulário de contato! Veja abaixo o que foi enviado: <br/>
