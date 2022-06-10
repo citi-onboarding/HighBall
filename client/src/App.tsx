@@ -3,17 +3,23 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
-import { NavBar, Purpose, Catalog, Footer } from './components';
+import { NavBar, Purpose, Catalog, Footer, About, Contact } from './components';
+
 
 
 function App() {
   return (
 
       <ThemeProvider theme={theme}>
+
         <NavBar/>
         <Purpose/>
         <Catalog/>
+        <About/>
+        <Contact/>
+
         <GlobalStyle/>
+       
       </ThemeProvider>
       
   );

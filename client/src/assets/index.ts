@@ -11,6 +11,10 @@ import NextArrow from './nextArrow.svg';
 import PrevArrow from './prevArrow.svg';
 import CardBackground from './card background.png';
 import CatalogBackground from './Background Catálogo.png';
+import CoposCirculos from './CoposCirculos.png';
+import Cups from './cups.png'
+import BackgroundContact from './background contact.png'
+
 
 export {
     NextArrow,
@@ -25,5 +29,8 @@ export {
     grupo17,
     Instagram,
     vector15,
-    Youtube
+    Youtube,
+    CoposCirculos,
+    Cups,
+    BackgroundContact
 };
