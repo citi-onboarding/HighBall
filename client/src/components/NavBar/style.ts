@@ -88,6 +88,7 @@ export const Button = styled.a`
     font-size: 18px;
     line-height: 22px;
     color: #F9F9F9;
+    text-decoration: none;
 
     &:hover{
         opacity: 0.5;

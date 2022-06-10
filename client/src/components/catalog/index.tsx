@@ -57,7 +57,7 @@ export function Catalog(){
   };
   
   return(
-    <Container>
+    <Container id="catalog">
       <InnerContainer>
         <Title>
           Catálogo

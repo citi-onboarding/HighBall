@@ -22,7 +22,7 @@ export const Contact =  () => {
     }
 
     return(      
-       <Container onSubmit={SendMail}> 
+       <Container id="contact" onSubmit={SendMail}> 
            <MiniContainer>
                 <ImageCup> <img src={Cups} alt="Copos coloridos" /> </ImageCup>
                 <Texts>

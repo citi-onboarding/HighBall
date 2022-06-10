@@ -9,7 +9,7 @@ import {
 
 export function  Card({ name, description, link }: { name: string, description: string, link: string }) {
   return(
-    <Container>
+    <Container id="card">
       <Product src={link} alt="Imagem do produto" />
       <Title> {name} </Title>
       <Description> {description} </Description>

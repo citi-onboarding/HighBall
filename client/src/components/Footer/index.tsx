@@ -31,7 +31,7 @@ export const Footer =  () => {
     getInfos();
     }, [])
     return(      
-       <Rodape>
+       <Rodape id="footer">
            <Container>
                 <Texto>
                     <Imagem src={grupo1}></Imagem>
