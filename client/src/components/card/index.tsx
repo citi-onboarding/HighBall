@@ -1,7 +1,4 @@
-import React from "react";
-
-import Placeholder from "./placeholder.svg"
-
+import React from "react"
 
 import {
   Container,
@@ -10,12 +7,12 @@ import {
   Product
 } from './styles'
 
-export function Card(){
+export function  Card({ name, description, link }: { name: string, description: string, link: string }) {
   return(
     <Container>
-      <Product src={Placeholder} alt="" />
-      <Title>Copo de refri</Title>
-      <Description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </Description>
+      <Product src={link} alt="Imagem do produto" />
+      <Title> {name} </Title>
+      <Description> {description} </Description>
     </Container>
   )
 }

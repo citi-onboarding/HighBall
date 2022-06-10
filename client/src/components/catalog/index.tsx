@@ -1,4 +1,6 @@
 import React from "react";
+import axios from "axios";
+import { useState, useEffect } from "react";
 import {Card} from "../../components"
 import {
   Container,
@@ -9,6 +11,13 @@ import {
 import { NextArrow } from "../../assets";
 import { PrevArrow } from "../../assets";
 
+type CardAPI = {
+  name: string,
+  description: string,
+  link: string,
+}
+
+
 export function Catalog(){
   const SlickArrowNext = ({ currentSlide, slideCount, ...props }:any) => (
     <img src={NextArrow} alt="Next arrow" {...props} />
@@ -16,7 +25,23 @@ export function Catalog(){
   const SlickArrowPrev = ({ currentSlide, slideCount, ...props }:any) => (
     <img src={PrevArrow} alt="Previous arrow" {...props} />
   );
-  
+
+  const [infos, setInfos] = useState<CardAPI[]>();
+
+  const getInfos = async () => {
+    const res = await axios.get('http://localhost:3001/cup')
+    const { data } = res;
+    setInfos(
+      data
+    )
+    console.log(infos)
+  }
+
+  useEffect(() => {
+    getInfos();
+  }, [])
+
+
   const settings = {
     centerMode:true,
     dots: true,
@@ -37,12 +62,16 @@ export function Catalog(){
         <Title>
           Catálogo
         </Title>
+        
         <Carousel {...settings}>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
+          {infos?.map((item:any, index:number) => (
+            <Card
+              key={index}
+              {...item}
+            />
+          ))}  
+
+
         </Carousel>
       </InnerContainer>
     </Container>

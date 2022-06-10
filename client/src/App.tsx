@@ -11,9 +11,13 @@ function App() {
   return (
 
       <ThemeProvider theme={theme}>
-        
+
+        <NavBar/>
+        <Purpose/>
+        <Catalog/>
         <About/>
         <Contact/>
+
         <GlobalStyle/>
        
       </ThemeProvider>
