@@ -32,11 +32,11 @@ export function Purpose(){
 
   useEffect(() => {
     getInfos();
-  })
+  }, [])
 
   return(
     <About>
-      <Container>
+      <Container id="purpose">
         <SideImages>
         <img src={PurpuseBubbles} alt="Imagem de pessoas segurando copos" />
         </SideImages>

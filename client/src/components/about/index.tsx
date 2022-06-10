@@ -6,7 +6,7 @@ import { CoposCirculos } from "../../assets";
 
 export const About =  () => {
     return(      
-       <Container> 
+       <Container id="about"> 
            <div>
            <h1>Com você <br/>
                  a cada gole</h1>

@@ -9,6 +9,7 @@ export const Container = styled.div `
     justify-content: space-between;
     margin: auto;
     width: 1126px;
+    margin-top: 180px;
 
     h1 {
         font-family: 'Baloo 2';
@@ -31,7 +32,7 @@ export const Container = styled.div `
         font-size: 18px;
         line-height: 22px;
         color: #232323;
-        
+        margin-top: 24px;
     }
     
 `

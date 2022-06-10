@@ -6,8 +6,8 @@ export const Container = styled.form `
     display: flex;
     width: 100%;
     background-image: url(${BackgroundContact});
-    background-size:1811.17px 501.91px;
-    margin: 0;
+    background-size: 100% 100%;
+    margin-top: 110px;
 `
 
 export const MiniContainer = styled.div `

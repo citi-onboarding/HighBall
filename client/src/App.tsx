@@ -13,10 +13,11 @@ function App() {
       <ThemeProvider theme={theme}>
 
         <NavBar/>
+        <About/>
         <Purpose/>
         <Catalog/>
-        <About/>
         <Contact/>
+        <Footer/>
 
         <GlobalStyle/>
        

@@ -8,9 +8,9 @@ export const NavBar =  () => {
             <Container>
                 <Logo>HighBall</Logo>
                 <Options>
-                    <A href="http://"><Link>Início</Link></A>
-                    <A href="http://"><Link>Propósito</Link></A>
-                    <A href="http://"><Link>Catálogo</Link></A>
+                    <A href="#about"><Link>Início</Link></A>
+                    <A href="#purpose"><Link>Propósito</Link></A>
+                    <A href="#catalog"><Link>Catálogo</Link></A>
                     <Button href="">
                         Encomenda
                         <img src={vector} alt="imagem de uma sacola de compras" />
